@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#000000">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:padding="10dp"
+        android:text="Pacman"
+        android:textColor="@color/white"
+        android:textSize="60sp"
+        android:textStyle="bold"
+        android:layout_marginTop="100dp"
+        android:background="@drawable/rounded_corners"
+        android:backgroundTint="@color/blue_dark"
+        android:elevation="8dp"
+        android:id="@+id/pacmanTitle" />
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="50dp"
+        android:gravity="center"
+        android:layout_below="@id/pacmanTitle"
+        android:orientation="vertical">
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/startButton"
+            android:layout_width="175dp"
+            android:layout_height="wrap_content"
+            android:text="Start Game"
+            android:textSize="18dp"
+            android:textColor="@color/white"
+            android:layout_margin="10dp"
+            android:background="@drawable/rounded_corners"
+            android:backgroundTint="@color/purple_200"/>
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/exitButton"
+            android:layout_width="175dp"
+            android:layout_height="wrap_content"
+            android:text="Exit Game"
+            android:textSize="18dp"
+            android:textColor="@color/white"
+            android:layout_margin="10dp"
+            android:background="@drawable/rounded_corners"
+            android:backgroundTint="@color/purple_500"/>
+    </LinearLayout>
+
+</RelativeLayout>

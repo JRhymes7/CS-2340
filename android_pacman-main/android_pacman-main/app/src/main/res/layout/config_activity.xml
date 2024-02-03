@@ -1,0 +1,189 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/configScreen"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#000000"
+    android:foregroundTint="#00F3F0F0"
+    tools:context=".ConfigScreen">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="false"
+        android:fontFamily="monospace"
+        android:gravity="center_horizontal"
+        android:paddingTop="70dp"
+        android:paddingRight="0dp"
+        android:text="Configuration Screen"
+        android:textColor="#FBFBFB"
+        android:textSize="30sp"
+        android:textStyle="bold"
+        tools:layout_editor_absoluteX="82dp"
+        tools:layout_editor_absoluteY="139dp" />
+
+    <EditText
+        android:id="@+id/editTextName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginStart="50dp"
+        android:layout_marginTop="150dp"
+        android:layout_marginEnd="50dp"
+        android:backgroundTint="#F4F3F3"
+        android:focusable="true"
+        android:fontFamily="monospace"
+        android:hint="enter your name"
+        android:inputType="textVisiblePassword|textNoSuggestions"
+        android:minHeight="48dp"
+        android:paddingLeft="10dp"
+        android:paddingTop="0dp"
+        android:textColor="#FBFBFB"
+        android:textColorHighlight="@color/white"
+        android:textColorHint="#B39DDB"
+        android:textSize="24sp" />
+
+    <Button
+        android:id="@+id/contButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="40dp"
+        android:fontFamily="monospace"
+        android:text="Continue" />
+
+    <TextView
+        android:id="@+id/difficulty"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="false"
+        android:layout_marginLeft="60dp"
+        android:layout_marginTop="220dp"
+        android:fontFamily="monospace"
+        android:text="Difficulty:"
+        android:textColor="#FBFBFB"
+        android:textSize="22sp" />
+
+    <RadioGroup
+        android:id="@+id/radioGroup1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="240dp"
+        android:layout_marginTop="212dp"
+        android:checkedButton="@id/radio_medium">
+
+        <RadioButton
+            android:id="@+id/radio_easy"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="monospace"
+            android:onClick="checkButtonDifficulty"
+            android:text="easy"
+            android:textColor="#FBFBFB"
+            android:textStyle="bold" />
+
+        <RadioButton
+            android:id="@+id/radio_medium"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="monospace"
+            android:onClick="checkButtonDifficulty"
+            android:text="medium"
+            android:textColor="#FBFBFB"
+            android:textStyle="bold" />
+
+        <RadioButton
+            android:id="@+id/radio_hard"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="monospace"
+            android:onClick="checkButtonDifficulty"
+            android:text="hard"
+            android:textColor="#FBFBFB"
+            android:textStyle="bold" />
+
+    </RadioGroup>
+
+    <TextView
+        android:id="@+id/sprite"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="false"
+        android:layout_marginLeft="60dp"
+        android:layout_marginTop="400dp"
+        android:fontFamily="monospace"
+        android:text="Pacman Color:"
+        android:textColor="#FBFBFB"
+        android:textSize="22sp" />
+
+    <RadioGroup
+        android:id="@+id/radioGroup2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="240dp"
+        android:layout_marginTop="394dp"
+        android:checkedButton="@id/radio_yellow">
+
+        <RadioButton
+            android:id="@+id/radio_yellow"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="monospace"
+            android:onClick="checkButtonPlayer"
+            android:text="yellow"
+            android:textColor="#FBFBFB"
+            android:textStyle="bold" />
+
+        <RadioButton
+            android:id="@+id/radio_red"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="monospace"
+            android:onClick="checkButtonPlayer"
+            android:text="red"
+            android:textColor="#FBFBFB"
+            android:textStyle="bold" />
+
+        <RadioButton
+            android:id="@+id/radio_blue"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="monospace"
+            android:onClick="checkButtonPlayer"
+            android:text="blue"
+            android:textColor="#FBFBFB"
+            android:textStyle="bold" />
+
+
+    </RadioGroup>
+
+    <ImageView
+        android:id="@+id/imageView2"
+        android:layout_width="35dp"
+        android:layout_height="35dp"
+        android:layout_marginLeft="340dp"
+        android:layout_marginTop="400dp"
+        app:srcCompat="@drawable/pacman_shape_yellow" />
+
+    <ImageView
+        android:id="@+id/imageView3"
+        android:layout_width="35dp"
+        android:layout_height="35dp"
+        app:srcCompat="@drawable/pacman_shape_red"
+        android:layout_marginLeft="340dp"
+        android:layout_marginTop="448dp"/>
+    <ImageView
+        android:id="@+id/imageView4"
+        android:layout_width="35dp"
+        android:layout_height="35dp"
+        app:srcCompat="@drawable/pacman_shape_blue"
+        android:layout_marginLeft="340dp"
+        android:layout_marginTop="496dp"/>
+
+
+</RelativeLayout>
